@@ -25,9 +25,32 @@ module.exports = {
                 }
             },
             {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    MinCssPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        options: {sourceMap: true}
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {sourceMap: true}
+                    }
+                ]
+            },
+            {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
+                use: [
+                    'style-loader',
+                    MinCssPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        options: {sourceMap: true}
+                    },
+
+                ]
+            },
 
         ]
     },
