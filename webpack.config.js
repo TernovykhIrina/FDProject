@@ -1,6 +1,13 @@
 const path = require('path');
 const MinCssPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
+const PATHS = {
+    src: path.join(__dirname, './src'),
+    dist: path.join(__dirname, './dist'),
+}
+const PAGES_DIR = `${PATHS.src}/pug/pages/`
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 module.exports = {
     entry: [
         './src/index.js',
@@ -51,6 +58,10 @@ module.exports = {
 
                 ]
             },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader'
+            },
 
         ]
     },
@@ -62,6 +73,10 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         }),
+        ...PAGES.map(page => new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/${page}`,
+            filename: `./${page.replace(/\.pug/,'.html')}`
+        })),
 
     ]
 };
