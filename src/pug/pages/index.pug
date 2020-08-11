@@ -3,7 +3,42 @@ html(lang='en')
     head
         title Jade
     body
-        h1 This one is the sub-section or widget title
-        h2 Next one is the item title inside widgets
-        h3 This is a label or CTA text
-        p This is the body text which is used for most of the design, like paragraphs, lists, etc.
+      div.container
+          div.box1
+              mixin colorBox(colorData)
+                  .colorBox
+                      .colorBox__rectangle(class=colorData.backgroundColor)
+                      .colorDescription
+                        .colorBox__name= colorData.name
+                        .colorBox__hex= colorData.hex
+              +colorBox( {backgroundColor: 'main-color-100', name: 'Dark Shade 100%', hex: '#1F2041'} )
+              +colorBox( {backgroundColor: 'main-color-75', name: 'Dark Shade 75%', hex: '#1F2041'} )
+              +colorBox( {backgroundColor: 'main-color-50', name: 'Dark Shade 50%', hex: '#1F2041'} )
+              +colorBox( {backgroundColor: 'main-color-25', name: 'Dark Shade 25%', hex: '#1F2041'} )
+              +colorBox( {backgroundColor: 'main-color-5', name: 'Dark Shade 5%', hex: '#1F2041'} )
+              +colorBox( {backgroundColor: 'second-color', name: 'Purple', hex: '#BC9CFF'} )
+              +colorBox( {backgroundColor: 'third-color', name: 'Green', hex: '#6FCF97'} )
+
+          div.box2
+                  div.fontBox
+                    div.type-box
+                      mixin fontType (fontTypeData)
+                        .text__type(class=fontTypeData.fontType)= fontTypeData.type
+                      +fontType( {type: 'H1', fontType: 'fontH1'} )
+                      +fontType( {type: 'H2', fontType: 'fontH2'} )
+                      +fontType( {type: 'H3', fontType: 'fontH3'} )
+                      +fontType( {type: 'Body', fontType: 'fontBody'} )
+                    div.example-box
+                      mixin fontExample(fontExampleData)
+                        .text__example(class=fontExampleData.fontExample)= fontExampleData.example
+                      +fontExample( {example: 'This one is the sub-section or widget title', fontExample:'fontExampleH1'} )
+                      +fontExample( {example: 'Next one is the item title inside widgets', fontExample:'fontExampleH2'} )
+                      +fontExample( {example: 'This is a label or CTA text', fontExample:'fontExampleH3'} )
+                      +fontExample( {example: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', fontExample:'fontExampleBody'} )
+
+
+
+
+
+
+
