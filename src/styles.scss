@@ -86,8 +86,9 @@ $green-color: #6FCF97;
 
 .container {
   display: flex;
+  flex-flow: column;
 }
-.logo {
+.header {
   margin-top: 30px;
   margin-left: 30px;
   width: 48px;
@@ -96,18 +97,23 @@ $green-color: #6FCF97;
   url('./Vector (1).svg') 25px 18px no-repeat,
   url('./Vector.svg') no-repeat;
 }
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .box1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin-top: 145px;
-  margin-left: 72px;
+  margin-top: 67px;
+  margin-left: 150px;
 }
 .box2 {
   display: flex;
   flex-flow: column;
-  margin-top: 145px;
-  margin-left: 427px;
+  margin-top: 67px;
+  margin-right: 102px;
 
 }
 .colorDescription {
@@ -120,7 +126,6 @@ $green-color: #6FCF97;
 }
 .colorBox {
   display: flex;
-  flex-flow: wrap;
   margin-bottom: 20px;
 }
 .colorBox_rectangle {
@@ -142,10 +147,9 @@ $green-color: #6FCF97;
   color: $dark-shade-100-color;
 }
 
-
 .fontBox {
   display: flex;
-  flex-flow: wrap;
+
 }
 .type_box {
   display: flex;

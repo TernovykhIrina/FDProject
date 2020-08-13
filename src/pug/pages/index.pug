@@ -4,8 +4,9 @@ html(lang='en')
         title Jade
     body
       div.container
-          div.logo
-          div.box1
+        div.header
+        div.content
+            div.box1
               mixin colorBox(colorData)
                   .colorBox
                       .colorBox_rectangle(class=colorData.backgroundColor)
@@ -20,7 +21,7 @@ html(lang='en')
               +colorBox( {backgroundColor: 'second-color', name: 'Purple', hex: '#BC9CFF'} )
               +colorBox( {backgroundColor: 'third-color', name: 'Green', hex: '#6FCF97'} )
 
-          div.box2
+            div.box2
                   div.fontBox
                     div.type_box
                       mixin fontType (fontTypeData)
