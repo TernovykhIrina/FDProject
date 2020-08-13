@@ -46,27 +46,6 @@ $green-color: #6FCF97;
   font-style: normal;
 }
 
-.h1 {
-  font-family: 'Quicksand-bold';
-  font-size: 24px;
-  line-height: 30px;
-  color: $dark-shade-100-color;
-}
-
-.h2 {
-  font-family: 'Quicksand-bold';
-  font-size: 19px;
-  line-height: 24px;
-  color: $dark-shade-100-color;
-}
-
-.h3 {
-  font-family: 'Montserrat-700';
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041;
-}
 .fontH1 {
   font-family: Montserrat;
   font-style: normal;
@@ -105,48 +84,35 @@ $green-color: #6FCF97;
   color: $dark-shade-25-color;
 }
 
-.text {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-
-}
-
-body {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-}
-
 .container {
   display: flex;
-  width: 1440px;
-  height: 900px;
-  justify-content: space-between;
+}
+.logo {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 48px;
+  height: 48px;
+  background: url('./Vector (2).svg')  11px 18px no-repeat,
+  url('./Vector (1).svg') 25px 18px no-repeat,
+  url('./Vector.svg') no-repeat;
 }
 .box1 {
   display: flex;
   flex-flow: column;
   align-items: center;
   margin-top: 145px;
-  margin-left: 150px;
+  margin-left: 72px;
 }
 .box2 {
   display: flex;
   flex-flow: column;
   margin-top: 145px;
-  margin-right: 191px;
+  margin-left: 427px;
 
 }
 .colorDescription {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   width: 159px;
   height: 57px;
   margin-top: 7px;
@@ -157,22 +123,84 @@ body {
   flex-flow: wrap;
   margin-bottom: 20px;
 }
-.colorBox__name {
-  font-family: 'Quicksand-bold';
-  font-size: 19px;
-  line-height: 29px;
-  color: $dark-shade-100-color;
-}
-.colorBox__hex {
-  font-family: 'Quicksand-light';
-  font-size: 19px;
-  line-height: 29px;
-}
-.colorBox__rectangle {
+.colorBox_rectangle {
   width: 70px;
   height: 70px;
   background: #1F2041;
   border-radius: 6px;
+}
+.colorBox_name {
+  font-family: Quicksand-bold;
+  font-size: 19px;
+  line-height: 29px;
+  color: $dark-shade-100-color;
+}
+.colorBox_hex {
+  font-family: Quicksand-light;
+  font-size: 19px;
+  line-height: 29px;
+  color: $dark-shade-100-color;
+}
+
+
+.fontBox {
+  display: flex;
+  flex-flow: wrap;
+}
+.type_box {
+  display: flex;
+  flex-flow: column;
+  margin-right: 30px;
+  margin-bottom: 508px;
+}
+.text_example {
+  margin-bottom: 50px;
+}
+
+.fontExampleH1 {
+  width: 336px;
+  height: 60px;
+  font-family: Quicksand-bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $dark-shade-100-color;
+}
+.fontExampleH2 {
+  width: 282px;
+  height: 48px;
+  font-family: Quicksand-bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $dark-shade-100-color;
+}
+.fontExampleH3 {
+  width: 186px;
+  height: 15px;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+  color: $dark-shade-100-color;
+}
+.fontExampleBody {
+  width: 301px;
+  height: 48px;
+  font-family: Montserrat-regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-shade-75-color;
+}
+
+.fontH1 {
+  margin-bottom: 80px;
+}
+.fontH2 {
+  margin-bottom: 75px;
+}
+.fontH3 {
+  margin-bottom: 49px;
 }
 
 .main-color-100 {
@@ -196,66 +224,8 @@ body {
 .third-color {
   background: $green-color;
 }
-.fontBox {
-  display: flex;
-  flex-flow: wrap;
-}
-.type-box {
-  display: flex;
-  flex-flow: column;
-  margin-right: 30px;
-  margin-bottom: 508px;
-}
-.text__example {
-  margin-bottom: 50px;
-}
-.fontExampleH1 {
-  width: 336px;
-  height: 60px;
-  font-family: 'Quicksand-bold';
-  font-size: 24px;
-  line-height: 30px;
-  color: $dark-shade-100-color;
-}
 
-.fontExampleH2 {
-  width: 282px;
-  height: 48px;
-  font-family: 'Quicksand-bold';
-  font-size: 19px;
-  line-height: 24px;
-  color: $dark-shade-100-color;
-}
 
-.fontExampleH3 {
-  width: 186px;
-  height: 15px;
-  font-family: 'Montserrat-Bold';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  margin-bottom: 47px;
-  color: $dark-shade-100-color;
-}
 
-.fontExampleBody {
-  width: 301px;
-  height: 48px;
-  font-family: 'Montserrat-regular';
-  font-size: 14px;
-  line-height: 24px;
-  color: $dark-shade-75-color;
-}
-.fontH1 {
-  margin-bottom: 80px;
-}
-.fontH2 {
-  margin-bottom: 75px;
-}
-.fontH3 {
-  margin-bottom: 49px;
-}
-.fontBody {
 
-}
+

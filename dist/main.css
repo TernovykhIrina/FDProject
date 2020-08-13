@@ -151,7 +151,8 @@ body {
 .colorBox__hex {
   font-family: 'Quicksand-light';
   font-size: 19px;
-  line-height: 29px; }
+  line-height: 29px;
+  color: #1F2041; }
 
 .colorBox__rectangle {
   width: 70px;
@@ -236,6 +237,11 @@ body {
 
 .fontH3 {
   margin-bottom: 49px; }
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background-image: url(images/Vector.svg); }
 
 
 /*# sourceMappingURL=main.css.map*/

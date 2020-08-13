@@ -65,8 +65,19 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
-               'file-loader',
-               ],
+                    'file-loader',
+                ],
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: ["file-loader?name=[name].[ext]&outputPath=images/",
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true,
+                        }
+                    }
+                ]
             },
 
         ]
@@ -75,7 +86,7 @@ module.exports = {
         new MinCssPlugin(),
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/,'.html')}`
+            filename: `./${page.replace(/\.pug/, '.html')}`
         })),
 
     ]

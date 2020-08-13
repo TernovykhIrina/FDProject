@@ -389,7 +389,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ "./src/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
 
+
 console.log("hello, world");
+
+// import Icon from './Vector.png';
+//
+// function component() {
+//     const element = document.createElement('div');
+//
+//     element.classList.add('hello');
+//
+//     const myIcon = new Image();
+//     myIcon.src = Icon;
+//
+//     element.appendChild(myIcon);
+//
+//     return element;
+// }
+//
+// document.body.appendChild(component());
 
 /***/ }),
 
