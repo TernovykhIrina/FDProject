@@ -5,16 +5,24 @@ const fs = require('fs');
 const PATHS = {
     src: path.join(__dirname, './src'),
     dist: path.join(__dirname, './dist'),
-}
-const PAGES_DIR = `${PATHS.src}/pug/pages/`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+};
+const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
+
+
 module.exports = {
-    entry: [
-        './src/index.js',
-    ],
+    devServer: {
+        index: 'headersAndFooters.html'
+    },
+    entry: {
+        'index': './src/index.js',
+        'headersAndFooters': './src/headersAndFooters.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+
+        filename: () => '[name].[hash].js'
+
     },
     devtool: "source-map",
     module: {
@@ -83,10 +91,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new MinCssPlugin(),
+        new MinCssPlugin({filename: '[name].[hash].css'}),
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/, '.html')}`
+            filename: `./${page.replace(/\.pug/, '.html')}`,
+            chunks: [`${page.split(".")[0]}`]
         })),
 
     ]
