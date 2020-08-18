@@ -101,6 +101,15 @@ $green-color: #6FCF97;
   display: flex;
   justify-content: space-between;
 }
+.logo {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 48px;
+  height: 48px;
+  background: url('./images/Vector (2).svg') 11px 18px no-repeat,
+  url('./images/Vector (1).svg') 25px 18px no-repeat,
+  url('./images/Vector.svg') no-repeat;
+}
 
 .box1 {
   display: flex;
@@ -161,7 +170,7 @@ $green-color: #6FCF97;
   margin-bottom: 50px;
 }
 
-.fontExampleH1 {
+.font-H1 {
   width: 336px;
   height: 60px;
   font-family: Quicksand-bold;
@@ -169,7 +178,7 @@ $green-color: #6FCF97;
   line-height: 30px;
   color: $dark-shade-100-color;
 }
-.fontExampleH2 {
+.font-H2 {
   width: 282px;
   height: 48px;
   font-family: Quicksand-bold;
@@ -177,7 +186,7 @@ $green-color: #6FCF97;
   line-height: 24px;
   color: $dark-shade-100-color;
 }
-.fontExampleH3 {
+.font-H3 {
   width: 186px;
   height: 15px;
   font-family: Montserrat-Bold;
@@ -188,7 +197,7 @@ $green-color: #6FCF97;
   margin-bottom: 47px;
   color: $dark-shade-100-color;
 }
-.fontExampleBody {
+.font-Body {
   width: 301px;
   height: 48px;
   font-family: Montserrat-regular;
