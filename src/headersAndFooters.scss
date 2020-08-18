@@ -7,7 +7,12 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
 }
-
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   width: 1440px;
   background: #F4F4F6;
@@ -111,5 +116,36 @@ body {
   margin-top: 133px;
   margin-left: 12px;
 }
+.buttons-box {
+  display: flex;
+}
 
+.button-log-in {
+  width: 87px;
+  height: 34px;
+  margin: 18px 20px 18px 0;
+  border-radius: 22px;
+  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-radius: 22px;
+
+}
+
+.button-register {
+  width: 196px;
+  height: 34px;
+  margin: 18px 0 18px 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+}
+.fontH3 {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+  color: #FFFFFF;
+}
 
