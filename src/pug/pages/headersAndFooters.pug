@@ -6,21 +6,66 @@ html(lang='en')
         div.container
             div.logo
             div.box-header-log-out
-                div.header-logo-image-box.logo-image
-                div.header-logo-name-box.logo-name
-                div.navbar
-                div.buttons-box
-                    button.button-log-in
-                    button.button-register.fontH3 зарегистрироваться
+                div.logo-box
+                    div.header-logo-image-box.logo-image
+                    div.header-logo-name-box.logo-name
+                div.nav-buttons-box
+                    div
+                        mixin navItem(data)
+                            li.navItem_name(class=data.navItemClass)=data.name
+                        ul.navbar
+                         +navItem({name: 'О нас', navItemClass:'about'})
+                         +navItem({name: 'Услуги', navItemClass:'services'})
+                         +navItem({name: '', navItemClass:'expand-more'})
+                         +navItem({name: 'Вакансии', navItemClass:'vacancies'})
+                         +navItem({name: 'Новости', navItemClass:'news'})
+                         +navItem({name: 'Соглашения', navItemClass:'agreements'})
+                         +navItem({name: '', navItemClass:'expand-more'})
+                    div.buttons-box
+                        div.round-angle
+                            button.button-log-in войти
+                        button.button-register зарегистрироваться
             div.box-header-log-in
-                div.header-logo-image-box.logo-image
-                div.header-logo-name-box.logo-name
+                div.logo-box
+                    div.header-logo-image-box.logo-image
+                    div.header-logo-name-box.logo-name
+                div.nav-buttons-box
+                    div.navbar
+                        mixin navItem(data)
+                            li.navItem_name(class=data.navItemClass)=data.name
+                        ul.navbar
+                         +navItem({name: 'О нас', navItemClass: 'about'})
+                         +navItem({name: 'Услуги', navItemClass: 'services'})
+                         +navItem({name: '', navItemClass: 'expand-more'})
+                         +navItem({name: 'Вакансии', navItemClass: 'vacancies'})
+                         +navItem({name: 'Новости', navItemClass: 'news'})
+                         +navItem({name: 'Соглашения', navItemClass: 'agreements'})
+                         +navItem({name: '', navItemClass: 'expand-more'})
+                    div.username-box
+                        div.split
+                        div.username Юлий Цезарь
             div.footer-widgets
-                div.footer-logo-image-box.logo-image
-                div.footer-logo-name-box.logo-name
+                div.footer-widgets-box-1
+                  div.footer-logo
+                     div.footer-logo-image-box.logo-image
+                     div.footer-logo-name-box.logo-name
+                  div.footer-widgets-text
+                div.footer-widgets-box-2
+
             div.footer-copyright-bar-1
+                div.copyright-text-1 Copyright © 2018 Toxin отель. Все права зачищены.
+                div.social-networks-1
+                    div.twitter
+                    div.fb
+                    div.ig
             div.footer-copyright-bar-2
-                div.footer-copyright-bar-2-logo-image-box.logo-image
-                div.footer-copyright-bar-2-logo-name-box.logo-name
+                div.footer-logo
+                   div.footer-copyright-bar-2-logo-image-box.logo-image
+                   div.footer-copyright-bar-2-logo-name-box.logo-name
+                div.copyright-text-2 Copyright © 2018 Toxin отель. Все права зачищены.
+                div.social-networks-2
+                    div.twitter
+                    div.fb
+                    div.ig
 
 

@@ -1,6 +1,7 @@
 const path = require('path');
 const MinCssPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const fs = require('fs');
 const PATHS = {
     src: path.join(__dirname, './src'),
@@ -97,6 +98,6 @@ module.exports = {
             filename: `./${page.replace(/\.pug/, '.html')}`,
             chunks: [`${page.split(".")[0]}`]
         })),
-
+        new CleanWebpackPlugin(),
     ]
 };
