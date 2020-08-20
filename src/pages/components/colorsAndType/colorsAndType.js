@@ -1,5 +1,5 @@
 import "../../../common.scss"
-import "./index.scss";
+import "./colorsAndType.scss";
 
 
 

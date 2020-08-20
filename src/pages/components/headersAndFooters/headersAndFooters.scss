@@ -367,22 +367,23 @@ ul {
 .email-input {
   width: 260px;
   height: 44px;
+  padding-left: 11px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-:-moz-placeholder {
+
+::-moz-placeholder {
   font-family: Montserrat-regular;
   color: rgba(#1F2041, 0.25);
   font-size: 14px;
-  padding-left: 11px;
+  background: url('../../../images/arrow_forward.svg') 225px no-repeat;
 }
 
 ::-webkit-input-placeholder {
   font-family: Montserrat-regular;
   color: rgba(#1F2041, 0.25);
   font-size: 14px;
-  padding-left: 11px;
-  background: url('../../../images/arrow_forward.svg') 225px no-repeat;;
+  background: url('../../../images/arrow_forward.svg') 225px no-repeat;
 }

@@ -16,8 +16,10 @@ module.exports = {
         index: 'headersAndFooters.html'
     },
     entry: {
-        'index': './src/pages/components/colorsAndType/index.js',
+        'colorsAndType': './src/pages/components/colorsAndType/colorsAndType.js',
         'headersAndFooters': './src/pages/components/headersAndFooters/headersAndFooters.js',
+        'cards': './src/pages/components/cards/cards.js',
+        'formElements': './src/pages/components/formElements/formElements.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
