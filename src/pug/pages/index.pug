@@ -8,11 +8,11 @@ html(lang='en')
         div.content
             div.box1
               mixin colorBox(colorData)
-                  .colorBox
-                      .colorBox_rectangle(class=colorData.backgroundColor)
-                      .colorDescription
-                        .colorBox_name= colorData.name
-                        .colorBox_hex= colorData.hex
+                  .color-box
+                      .color-box-rectangle(class=colorData.backgroundColor)
+                      .color-description
+                        .color-box-name= colorData.name
+                        .color-box-hex= colorData.hex
               +colorBox( {backgroundColor: 'main-color-100', name: 'Dark Shade 100%', hex: '#1F2041'} )
               +colorBox( {backgroundColor: 'main-color-75', name: 'Dark Shade 75%', hex: '#1F2041'} )
               +colorBox( {backgroundColor: 'main-color-50', name: 'Dark Shade 50%', hex: '#1F2041'} )
@@ -22,21 +22,21 @@ html(lang='en')
               +colorBox( {backgroundColor: 'third-color', name: 'Green', hex: '#6FCF97'} )
 
             div.box2
-                  div.fontBox
-                    div.type_box
-                      mixin fontType (fontTypeData)
-                        .text_type(class=fontTypeData.fontType)= fontTypeData.type
-                      +fontType( {type: 'H1', fontType: 'fontH1'} )
-                      +fontType( {type: 'H2', fontType: 'fontH2'} )
-                      +fontType( {type: 'H3', fontType: 'fontH3'} )
-                      +fontType( {type: 'Body', fontType: 'fontBody'} )
+                  div.font-box
+                    div.type-box
+                      mixin textType (typeData)
+                        .text-type(class=typeData.font)= typeData.text
+                      +textType( {text: 'H1', font: 'font-H1'} )
+                      +textType( {text: 'H2', font: 'font-H2'} )
+                      +textType( {text: 'H3', font: 'font-H3'} )
+                      +textType( {text: 'Body', font: 'font-Body'} )
                     div.example-box
-                      mixin fontExample(fontExampleData)
-                        .text_example(class=fontExampleData.fontExample)= fontExampleData.example
-                      +fontExample( {example: 'This one is the sub-section or widget title', fontExample:'font-H1'} )
-                      +fontExample( {example: 'Next one is the item title inside widgets', fontExample:'font-H2'} )
-                      +fontExample( {example: 'This is a label or CTA text', fontExample:'font-H3'} )
-                      +fontExample( {example: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', fontExample:'font-Body'} )
+                      mixin fontExample(fontData)
+                        .text-example(class=fontData.font)= fontData.text
+                      +fontExample( {text: 'This one is the sub-section or widget title', font:'font-example-H1'} )
+                      +fontExample( {text: 'Next one is the item title inside widgets', font:'font-example-H2'} )
+                      +fontExample( {text: 'This is a label or CTA text', font:'font-example-H3'} )
+                      +fontExample( {text: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', font:'font-example-Body'} )
 
 
 

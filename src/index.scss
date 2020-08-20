@@ -7,82 +7,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
 }
-$dark-shade-100-color: #1F2041;
-$dark-shade-75-color: rgba(#1F2041, 0.75);
-$dark-shade-50-color: rgba(#1F2041, 0.50);
-$dark-shade-25-color: rgba(#1F2041, 0.25);
-$dark-shade-5-color: rgba(#1F2041, 0.05);
-$purple-color: #BC9CFF;
-$green-color: #6FCF97;
-
-@font-face {
-  font-family: 'Quicksand-bold';
-  src: url('fonts/quicksand-v21-latin-700.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Quicksand-light';
-  src: url('fonts/Quicksand-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/montserrat-v14-latin-regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat-regular';
-  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.fontH1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: right;
-  color: $dark-shade-25-color;
-}
-.fontH2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 23px;
-  text-align: right;
-  color: $dark-shade-25-color;
-}
-.fontH3 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: $dark-shade-25-color;
-}
-.fontBody {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: right;
-  color: $dark-shade-25-color;
-}
 
 .container {
   display: flex;
@@ -125,7 +49,7 @@ $green-color: #6FCF97;
   margin-right: 102px;
 
 }
-.colorDescription {
+.color-description {
   display: flex;
   flex-flow: column;
   width: 159px;
@@ -133,60 +57,98 @@ $green-color: #6FCF97;
   margin-top: 7px;
   margin-left:40px;
 }
-.colorBox {
+.color-box {
   display: flex;
   margin-bottom: 20px;
 }
-.colorBox_rectangle {
+.color-box-rectangle {
   width: 70px;
   height: 70px;
   background: #1F2041;
   border-radius: 6px;
 }
-.colorBox_name {
+.color-box-name {
   font-family: Quicksand-bold;
   font-size: 19px;
   line-height: 29px;
-  color: $dark-shade-100-color;
+  color: #1F2041;
 }
-.colorBox_hex {
+.color-box-hex {
   font-family: Quicksand-light;
   font-size: 19px;
   line-height: 29px;
-  color: $dark-shade-100-color;
+  color: #1F2041;
 }
-
-.fontBox {
+.font-box {
   display: flex;
-
 }
-.type_box {
+.type-box {
   display: flex;
   flex-flow: column;
   margin-right: 30px;
   margin-bottom: 508px;
 }
-.text_example {
+.text-example {
   margin-bottom: 50px;
 }
-
 .font-H1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: rgba(#1F2041, 0.25);
+  margin-bottom: 80px;
+}
+.font-H2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: rgba(#1F2041, 0.25);
+  margin-bottom: 75px;
+}
+.font-H3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(#1F2041, 0.25);
+  margin-bottom: 49px;
+}
+.font-Body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(#1F2041, 0.25);
+}
+
+.font-example-H1 {
   width: 336px;
   height: 60px;
   font-family: Quicksand-bold;
   font-size: 24px;
   line-height: 30px;
-  color: $dark-shade-100-color;
+  color: #1F2041;
 }
-.font-H2 {
+.font-example-H2 {
   width: 282px;
   height: 48px;
   font-family: Quicksand-bold;
   font-size: 19px;
   line-height: 24px;
-  color: $dark-shade-100-color;
+  color: #1F2041;
 }
-.font-H3 {
+.font-example-H3 {
   width: 186px;
   height: 15px;
   font-family: Montserrat-Bold;
@@ -195,47 +157,37 @@ $green-color: #6FCF97;
   line-height: 15px;
   text-transform: uppercase;
   margin-bottom: 47px;
-  color: $dark-shade-100-color;
+  color: #1F2041;
 }
-.font-Body {
+.font-example-Body {
   width: 301px;
   height: 48px;
   font-family: Montserrat-regular;
   font-size: 14px;
   line-height: 24px;
-  color: $dark-shade-75-color;
-}
-
-.fontH1 {
-  margin-bottom: 80px;
-}
-.fontH2 {
-  margin-bottom: 75px;
-}
-.fontH3 {
-  margin-bottom: 49px;
+  color: rgba(#1F2041, 0.75);
 }
 
 .main-color-100 {
-  background: $dark-shade-100-color;
+  background: #1F2041;
 }
 .main-color-75 {
-  background: $dark-shade-75-color;
+  background: rgba(#1F2041, 0.75);
 }
 .main-color-50 {
-  background: $dark-shade-50-color;
+  background: rgba(#1F2041, 0.50);
 }
 .main-color-25 {
-  background: $dark-shade-25-color;
+  background: rgba(#1F2041, 0.25);
 }
 .main-color-5 {
-  background: $dark-shade-5-color;
+  background: rgba(#1F2041, 0.05);;
 }
 .second-color {
-  background: $purple-color;
+  background: #BC9CFF;
 }
 .third-color {
-  background: $green-color;
+  background: #6FCF97;
 }
 
 
