@@ -7,7 +7,7 @@ const PATHS = {
     src: path.join(__dirname, './src'),
     dist: path.join(__dirname, './dist'),
 };
-const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES_DIR = `${PATHS.src}/pages/pugs/`;
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
 
 
@@ -16,8 +16,8 @@ module.exports = {
         index: 'headersAndFooters.html'
     },
     entry: {
-        'index': './src/index.js',
-        'headersAndFooters': './src/headersAndFooters.js',
+        'index': './src/pages/components/colorsAndType/index.js',
+        'headersAndFooters': './src/pages/components/headersAndFooters/headersAndFooters.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

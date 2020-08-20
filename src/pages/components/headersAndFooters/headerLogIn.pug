@@ -1,0 +1,25 @@
+div.box-header-log-in
+    div.logo-box
+        div.header-logo-image-box.logo-image
+        div.header-logo-name-box.logo-name
+    div.nav-buttons-box
+        div.navbar
+            mixin navItem(data)
+                li.navItem_name(class=data.navItemClass)=data.name
+            ul.navbar
+                +navItem({name: 'О нас', navItemClass: 'about'})
+                +navItem({name: 'Услуги', navItemClass: 'services'})
+                +navItem({name: '', navItemClass: 'expand-more'})
+                +navItem({name: 'Вакансии', navItemClass: 'vacancies'})
+                +navItem({name: 'Новости', navItemClass: 'news'})
+                +navItem({name: 'Соглашения', navItemClass: 'agreements'})
+                +navItem({name: '', navItemClass: 'expand-more'})
+        div.username-box
+            div.split
+            div.username Юлий Цезарь
+
+
+
+
+
+

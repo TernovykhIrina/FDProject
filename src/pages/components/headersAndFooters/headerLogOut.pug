@@ -1,0 +1,26 @@
+div.box-header-log-out
+    div.logo-box
+        div.header-logo-image-box.logo-image
+        div.header-logo-name-box.logo-name
+    div.nav-buttons-box
+        div
+            mixin navItem(data)
+                li.navItem_name(class=data.navItemClass)=data.name
+            ul.navbar
+                +navItem({name: 'О нас', navItemClass:'about'})
+                +navItem({name: 'Услуги', navItemClass:'services'})
+                +navItem({name: '', navItemClass:'expand-more'})
+                +navItem({name: 'Вакансии', navItemClass:'vacancies'})
+                +navItem({name: 'Новости', navItemClass:'news'})
+                +navItem({name: 'Соглашения', navItemClass:'agreements'})
+                +navItem({name: '', navItemClass:'expand-more'})
+        div.buttons-box
+            div.round-angle
+                button.button-log-in войти
+            button.button-register зарегистрироваться
+
+
+
+
+
+

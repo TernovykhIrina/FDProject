@@ -1,0 +1,49 @@
+div.footer-widgets
+    div.footer-widgets-box-1
+        div.footer-logo
+            div.footer-logo-image-box.logo-image
+            div.footer-logo-name-box.logo-name
+        div.footer-widgets-text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+    div.footer-widgets-box-2
+        div
+            mixin navItem(data)
+                li(class=data.navItemClass)=data.name
+            ul.widget-navbar
+                +navItem({name: 'Навигация', navItemClass: 'widget-h'})
+                +navItem({name: 'О нас', navItemClass: 'widget-item'})
+                +navItem({name: 'Новости', navItemClass: 'widget-item'})
+                +navItem({name: 'Служба поддержки', navItemClass: 'widget-item'})
+                +navItem({name: 'Услуги', navItemClass: 'widget-item'})
+        div
+            mixin navItem(data)
+                li(class=data.navItemClass)=data.name
+            ul.widget-about
+                +navItem({name: 'О нас', navItemClass: 'widget-h'})
+                +navItem({name: 'О сервисе', navItemClass: 'widget-item'})
+                +navItem({name: 'Наша команда', navItemClass: 'widget-item'})
+                +navItem({name: 'Вакансии', navItemClass: 'widget-item'})
+                +navItem({name: 'Инвесторы', navItemClass: 'widget-item'})
+        div
+            mixin navItem(data)
+                li(class=data.navItemClass)=data.name
+            ul.widget-help
+                +navItem({name: 'Служба поддержки', navItemClass: 'widget-h'})
+                +navItem({name: 'Соглашения', navItemClass: 'widget-item'})
+                +navItem({name: 'Сообщества', navItemClass: 'widget-item'})
+                +navItem({name: 'Связь с нами', navItemClass: 'widget-item'})
+        div
+            mixin navItem(data)
+                li(class=data.navItemClass)=data.name
+            ul.widget-subscribe
+                +navItem({name: 'Подписка', navItemClass: 'widget-h'})
+                +navItem({name: 'Получайте специальные предложения и новости сервиса', navItemClass: 'widget-item-subscribe'})
+                input.email-input(
+                    type='text'
+                    placeholder="Email"
+                )
+
+
+
+
+
+

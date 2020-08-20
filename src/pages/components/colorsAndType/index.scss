@@ -12,27 +12,10 @@ time, mark, audio, video {
   display: flex;
   flex-flow: column;
 }
-.header {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 48px;
-  height: 48px;
-  background: url('./images/Vector (2).svg')  11px 18px no-repeat,
-  url('./images/Vector (1).svg') 25px 18px no-repeat,
-  url('./images/Vector.svg') no-repeat;
-}
+
 .content {
   display: flex;
   justify-content: space-between;
-}
-.logo {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 48px;
-  height: 48px;
-  background: url('./images/Vector (2).svg') 11px 18px no-repeat,
-  url('./images/Vector (1).svg') 25px 18px no-repeat,
-  url('./images/Vector.svg') no-repeat;
 }
 
 .box1 {
@@ -42,13 +25,14 @@ time, mark, audio, video {
   margin-top: 67px;
   margin-left: 150px;
 }
+
 .box2 {
   display: flex;
   flex-flow: column;
   margin-top: 67px;
   margin-right: 102px;
-
 }
+
 .color-description {
   display: flex;
   flex-flow: column;
@@ -57,40 +41,48 @@ time, mark, audio, video {
   margin-top: 7px;
   margin-left:40px;
 }
+
 .color-box {
   display: flex;
   margin-bottom: 20px;
 }
+
 .color-box-rectangle {
   width: 70px;
   height: 70px;
   background: #1F2041;
   border-radius: 6px;
 }
+
 .color-box-name {
   font-family: Quicksand-bold;
   font-size: 19px;
   line-height: 29px;
   color: #1F2041;
 }
+
 .color-box-hex {
   font-family: Quicksand-light;
   font-size: 19px;
   line-height: 29px;
   color: #1F2041;
 }
+
 .font-box {
   display: flex;
 }
+
 .type-box {
   display: flex;
   flex-flow: column;
   margin-right: 30px;
   margin-bottom: 508px;
 }
+
 .text-example {
   margin-bottom: 50px;
 }
+
 .font-H1 {
   font-family: Montserrat;
   font-style: normal;
@@ -101,6 +93,7 @@ time, mark, audio, video {
   color: rgba(#1F2041, 0.25);
   margin-bottom: 80px;
 }
+
 .font-H2 {
   font-family: Montserrat;
   font-style: normal;
@@ -111,6 +104,7 @@ time, mark, audio, video {
   color: rgba(#1F2041, 0.25);
   margin-bottom: 75px;
 }
+
 .font-H3 {
   font-family: Montserrat;
   font-style: normal;
@@ -122,6 +116,7 @@ time, mark, audio, video {
   color: rgba(#1F2041, 0.25);
   margin-bottom: 49px;
 }
+
 .font-Body {
   font-family: Montserrat;
   font-style: normal;
@@ -140,6 +135,7 @@ time, mark, audio, video {
   line-height: 30px;
   color: #1F2041;
 }
+
 .font-example-H2 {
   width: 282px;
   height: 48px;
@@ -148,6 +144,7 @@ time, mark, audio, video {
   line-height: 24px;
   color: #1F2041;
 }
+
 .font-example-H3 {
   width: 186px;
   height: 15px;
@@ -159,6 +156,7 @@ time, mark, audio, video {
   margin-bottom: 47px;
   color: #1F2041;
 }
+
 .font-example-Body {
   width: 301px;
   height: 48px;
@@ -171,21 +169,27 @@ time, mark, audio, video {
 .main-color-100 {
   background: #1F2041;
 }
+
 .main-color-75 {
   background: rgba(#1F2041, 0.75);
 }
+
 .main-color-50 {
   background: rgba(#1F2041, 0.50);
 }
+
 .main-color-25 {
   background: rgba(#1F2041, 0.25);
 }
+
 .main-color-5 {
   background: rgba(#1F2041, 0.05);;
 }
+
 .second-color {
   background: #BC9CFF;
 }
+
 .third-color {
   background: #6FCF97;
 }
