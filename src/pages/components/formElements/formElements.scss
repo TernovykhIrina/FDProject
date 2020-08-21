@@ -1,0 +1,183 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+}
+
+.box1 {
+  display: flex;
+  margin: 62px 0 0 141px;
+}
+
+.box2 {
+  display: flex;
+}
+
+.text-field-default {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+
+.text-field-default label {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.text-field-default .label-text {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-top: 3px;
+}
+
+.text-field-default .form-type-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 8px;
+}
+
+.text-field-default input {
+  display: flex;
+  flex-flow: column;
+  width: 320px;
+  height: 44px;
+  padding-left: 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.text-field-default ::-moz-placeholder {
+  font-family: Montserrat-regular;
+  color: rgba(#1F2041, 0.25);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text-field-default ::-webkit-input-placeholder {
+  font-family: Montserrat-regular;
+  color: rgba(#1F2041, 0.25);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text-field-hover-focus {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+
+.text-field-hover-focus label {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.text-field-hover-focus .label-text {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 5px;
+}
+
+.text-field-hover-focus .form-type-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 5.44px;
+}
+
+.text-field-hover-focus input {
+  display: flex;
+  flex-flow: column;
+  width: 320px;
+  height: 44px;
+  padding-left: 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.text-field-hover-focus ::-moz-placeholder {
+  font-family: Montserrat-regular;
+  color: rgba(#1F2041, 0.75);
+  font-size: 13.7px;
+  line-height: 24px;
+}
+
+.text-field-hover-focus ::-webkit-input-placeholder {
+  font-family: Montserrat-regular;
+  color: rgba(#1F2041, 0.75);
+  font-size: 13.7px;
+  line-height: 24px;
+  padding-top: 2px;
+}
+
+.dropdown {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+
+.dropdown label {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.dropdown .label-text {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.dropdown .form-type-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 5.44px;
+}
+
+.dropdown select {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #FFFFFF url('../../../images/expand_more.svg') 290px 16px no-repeat;
+  font-family: Montserrat-regular;
+  color: rgba(#1F2041, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 14px;
+  padding-bottom: 1px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}

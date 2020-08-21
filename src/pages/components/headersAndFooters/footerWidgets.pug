@@ -37,10 +37,12 @@ div.footer-widgets
             ul.widget-subscribe
                 +navItem({name: 'Подписка', navItemClass: 'widget-h'})
                 +navItem({name: 'Получайте специальные предложения и новости сервиса', navItemClass: 'widget-item-subscribe'})
-                input.email-input(
+                form
+                  input.email-input(
                     type='text'
                     placeholder="Email"
-                )
+                    )
+
 
 
 

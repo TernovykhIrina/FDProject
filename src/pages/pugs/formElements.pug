@@ -1,7 +1,35 @@
 doctype html
 html(lang='en')
     head
-        title Cards
+        title Form Elements
     body
         div.container
-            div.logo formElements
+            div.logo
+            div.box1
+                div.box1-colomn1
+                    div.text-field-default
+                        label
+                            span.label-text text field
+                            span.form-type-text default
+                        input( type='text' placeholder="Email")
+                    div.text-field-hover-focus
+                        label
+                            span.label-text text field
+                            span.form-type-text hover / focus
+                        input( type='text' placeholder="This is pretty awesome")
+                    div.dropdown
+                        label
+                            span.label-text dropdown
+                            span.form-type-text default
+                        select.dropdown-select
+                            option Сколько гостей
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                            option(value="4") 4
+
+                div.box1-colomn2
+                div.box1-colomn3
+            div.box2
+                div.box2-colomn1
+                div.box2-colomn1
