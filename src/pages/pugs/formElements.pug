@@ -17,18 +17,105 @@ html(lang='en')
                             span.label-text text field
                             span.form-type-text hover / focus
                         input( type='text' placeholder="This is pretty awesome")
-                    div.dropdown
+                    div.dropdown-1
                         label
                             span.label-text dropdown
                             span.form-type-text default
                         select.dropdown-select
                             option Сколько гостей
-                            option(value="1") 1
-                            option(value="2") 2
-                            option(value="3") 3
-                            option(value="4") 4
-
+                    div.masked-text-field
+                        label
+                            span.label-text masked text field
+                            span.form-type-text default
+                        input( type='text' placeholder="ДД.ММ.ГГГГ")
+                    div.date-dropdown-box
+                        div.date-dropdown-1
+                            label
+                                span.label-text date dropdown
+                            select.date-dropdown-select
+                                option ДД.ММ.ГГГГ
+                        div.date-dropdown-2
+                            label
+                                span.label-text date dropdown
+                            select.date-dropdown-select
+                                option 19.08.2019
+                    div.filter-date-dropdown
+                        label
+                            span.label-text filter date dropdown
+                        select.dropdown-select
+                            option 19 авг - 23 авг
+                    div.subscription-text-field
+                        label
+                            span.label-text subscription text field
+                        input( type='text' placeholder="Email")
+                    div.dropdown-2
+                        label
+                            span.label-text dropdown
+                            span.form-type-text default
+                        div.dropdown-text
+                            div 2 спальни, 2 кровати...
+                    div.dropdown-3
+                        label
+                            span.label-text dropdown
+                            span.form-type-text expanded
+                        div.dropdown-text
+                            div 2 спальни, 2 кровати...
+                        div.date-dropdown-3-checkbox
+                            ul
+                                li.checkbox-item
+                                    div.item-name спальни
+                                    div.item-count
+                                       button.decrement -
+                                       div.value 2
+                                       button.increment +
+                                li.checkbox-item
+                                    div.item-name кровати
+                                    div.item-count
+                                       button.decrement -
+                                       div.value 2
+                                       button.increment +
+                                li.checkbox-item
+                                    div.item-name ванные комнаты
+                                    div.item-count
+                                       button.decrement -
+                                       div.value 0
+                                       button.increment +
+                    div.expandable-checkbox-list-1 expandable checkbox list
+                    div.expandable-checkbox-list-2
+                         div.expandable-checkbox-list-2-top expandable checkbox list
+                         ul.expandable-checkbox-list-2-bottom
+                                li.checkbox-item
+                                     div.square
+                                     div.name Завтрак
+                                li.checkbox-item
+                                     div.square.checked
+                                     div.name Письменный стол
+                                li.checkbox-item
+                                     div.square.checked
+                                     div.name Стул для кормления
+                                li.checkbox-item
+                                     div.square.checked
+                                     div.name Кроватка
+                                li.checkbox-item
+                                     div.square
+                                     div.name Телевизор
+                                li.checkbox-item
+                                     div.square
+                                     div.name Шампунь
                 div.box1-colomn2
+                    div.checkbox-buttons
+                        div.checkbox-buttons-top Checkbox Buttons
+                        ul.checkbox-buttons-bottom
+                            li.checkbox-item
+                                div.square
+                                div.name Можно курить
+                            li.checkbox-item
+                                div.square.checked
+                                div.name Можно с питомцами
+                            li.checkbox-item
+                                div.square.checked
+                                div.name.guests Можно пригласить гостей (до 10 человек)
+
                 div.box1-colomn3
             div.box2
                 div.box2-colomn1

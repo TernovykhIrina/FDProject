@@ -9,28 +9,22 @@ time, mark, audio, video {
 }
 
 @font-face {
-  font-family: 'Quicksand-bold';
-  src: url('fonts/quicksand-v21-latin-700.woff2') format('woff2');
+  font-family: 'Quicksand-Bold';
+  src: url('fonts/Quicksand-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand-light';
+  font-family: 'Quicksand-Light';
   src: url('fonts/Quicksand-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/montserrat-v14-latin-regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: 'Montserrat-regular';
+  font-family: 'Montserrat-Regular';
   src: url('fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
