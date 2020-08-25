@@ -761,6 +761,7 @@
 .toggle{
   display: flex;
   flex-flow: column;
+  margin-bottom: 40px;
 }
 
 .toggle label {
@@ -849,6 +850,73 @@
   margin-left: 10px;
 }
 
+
+.like-buttons {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 37px;
+}
+
+.like-buttons label {
+  margin-bottom: 15px;
+}
+.like-buttons .label-text {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.like-buttons .likebox {
+  display: flex;
+}
+
+.like-buttons .oval-unliked {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.like-buttons .oval-liked {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #BC9CFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.like-buttons .oval-unliked .heart {
+  width: 20px;
+  height: 20px;
+  background: url('../../../images/favorite_border.svg') 4px 5px no-repeat;
+}
+
+.like-buttons .oval-liked .heart {
+  width: 20px;
+  height: 20px;
+  background: url('../../../images/favorite.svg') 4px 5px no-repeat;
+}
+
+.likebox .like-counter {
+  font-family: Montserrat-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #BC9CFF;
+}
 
 
 
