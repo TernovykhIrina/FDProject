@@ -14,6 +14,11 @@
   margin-left: 126px;
 }
 
+.box1-colomn3 {
+  margin-top: 3px;
+  margin-left: 72px;
+}
+
 .box2 {
   display: flex;
 }
@@ -700,7 +705,6 @@
 
 .radio-buttons .checkbox {
   display: flex;
-  justify-content: space-between;
 }
 
 .radio-buttons .round-unchecked {
@@ -740,6 +744,7 @@
   display: flex;
   align-items: center;
   margin-right: 39px;
+  margin-left: 20px;
 }
 
 .block-checked .name {
@@ -972,7 +977,7 @@
   display: flex;
   flex-flow: column;
   width: 320px;
-  margin-bottom: 53px;
+  margin-bottom: 98px;
 }
 
 .dropdown-4 label {
@@ -1082,6 +1087,313 @@
   margin-top: 11px;
 }
 
+.rich-checkbox{
+  display: flex;
+  flex-flow: column;
+}
+
+.rich-checkbox-top {
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin-bottom: 17.44px;
+}
+
+.rich-checkbox-bottom {
+  display: flex;
+  flex-flow: column;
+}
+
+.rich-checkbox-bottom .square {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.rich-checkbox-bottom .checkbox-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.rich-checkbox-bottom .text {
+  display: flex;
+  flex-flow: column;
+}
+
+.rich-checkbox-bottom .description {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 9px;
+}
+
+.rich-checkbox-bottom .name {
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 9px;
+  margin-bottom: 6px;
+}
+
+.range-slider {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 44px;
+}
+
+.range-slider label {
+  margin-bottom: 23px;
+  display: flex;
+}
+.range-slider .label-name {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.range-slider .label-text {
+  font-family: Montserrat-Regular;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 70px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rectangle {
+  width: 266px;
+  height: 6px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.rectangle-inner {
+  width: 100px;
+  height: 6px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 3px;
+  margin-left: 74px;
+  display: flex;
+  align-items: center;
+}
+.round {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.round-2 {
+ margin-left: 69px;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 37px;
+}
+
+.buttons label {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons .label-name {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.buttons-filled {
+  margin-bottom: 12px;
+}
+.buttons-filled .button-default {
+  width: 99px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.buttons-filled .button-hover {
+  width: 99px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.5;
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 19px;
+}
+
+.buttons-bordered {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.buttons-bordered .border-default {
+  display: flex;
+  width: 99px;
+  height: 44px;
+  margin: 18px 20px 18px 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-bordered .button-default {
+  width: 95px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-self: center;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.buttons-bordered .border-hover {
+  display: flex;
+  width: 99px;
+  height: 44px;
+  margin: 18px 20px 18px 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.5;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.buttons-bordered .button-hover {
+  width: 95px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-self: center;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  left: -117px;
+  position: relative;
+  z-index: 1;
+}
+
+.buttons-no-border {
+  margin-left: -5px;
+  margin-bottom: 29px;
+}
+
+.buttons-no-border .button-default {
+  background: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-self: center;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.buttons-no-border .button-hover {
+  background: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-self: center;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 8px;
+}
+
+.button-pay-box {
+ display: flex;
+}
+
+.button-pay {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 0;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background: url('../../../images/arrow_forward_white.svg') no-repeat;
+  position: relative;
+  z-index: 1;
+  left: -31px;
+  top: 13px;
+
+}
 
 
 
