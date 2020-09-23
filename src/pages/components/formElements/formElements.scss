@@ -1475,7 +1475,7 @@
   display: flex;
   flex-flow: column;
   width: 320px;
-  margin-bottom: 98px;
+  margin-bottom: 99px;
 }
 
 .dropdown-5 label {
@@ -1597,6 +1597,38 @@
   color: #BC9CFF;
 }
 
+.bullet-list {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 36px;
+}
+
+.bullet-list label {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.bullet-list .label-name {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.bullet-list li {
+  font-family: Montserrat-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: rgba(31, 32, 65, 0.75);
+  list-style-type: none;
+  background: url('../../../images/Ellipse.svg') 0px 6px no-repeat;
+  padding-left: 20px;
+}
 
 
 
