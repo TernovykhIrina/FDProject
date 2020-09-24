@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const fs = require('fs');
 const PATHS = {
     src: path.join(__dirname, './src'),
-    dist: path.join(__dirname, './dist'),
+    dist: path.join(__dirname, './docs'),
 };
 const PAGES_DIR = `${PATHS.src}/pages/pugs/`;
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
@@ -23,7 +23,7 @@ module.exports = {
         'index': './src/pages/components/index/index.js',
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
 
         filename: () => '[name].[hash].js'
 
