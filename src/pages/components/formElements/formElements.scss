@@ -1228,10 +1228,10 @@
   color: #1F2041;
 }
 
-.buttons-filled {
+.buttons-filled-box {
   margin-bottom: 12px;
 }
-.buttons-filled .button-default {
+.button-filled-default {
   width: 99px;
   height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -1246,7 +1246,7 @@
   color: #FFFFFF;
 }
 
-.buttons-filled .button-hover {
+.button-filled-hover {
   width: 99px;
   height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -1263,12 +1263,12 @@
   margin-left: 19px;
 }
 
-.buttons-bordered {
+.buttons-bordered-box {
   display: flex;
   margin-bottom: 11px;
 }
 
-.buttons-bordered .border-default {
+.border-default {
   display: flex;
   width: 99px;
   height: 44px;
@@ -1280,7 +1280,7 @@
   align-items: center;
 }
 
-.buttons-bordered .button-default {
+.button-border-default {
   width: 95px;
   height: 40px;
   background: #FFFFFF;
@@ -1296,7 +1296,7 @@
   color: #BC9CFF;
 }
 
-.buttons-bordered .border-hover {
+.border-hover {
   display: flex;
   width: 99px;
   height: 44px;
@@ -1310,7 +1310,7 @@
   position: relative;
 }
 
-.buttons-bordered .button-hover {
+.button-border-hover {
   width: 95px;
   height: 40px;
   background: #FFFFFF;
@@ -1328,12 +1328,12 @@
   position: relative;
 }
 
-.buttons-no-border {
+.buttons-no-border-box {
   margin-left: -5px;
   margin-bottom: 29px;
 }
 
-.buttons-no-border .button-default {
+.button-no-border-default {
   background: #FFFFFF;
   border-radius: 22px;
   border: none;
@@ -1347,7 +1347,7 @@
   color: #BC9CFF;
 }
 
-.buttons-no-border .button-hover {
+.button-no-border-hover {
   background: #FFFFFF;
   border-radius: 22px;
   border: none;

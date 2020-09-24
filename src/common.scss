@@ -47,6 +47,10 @@ time, mark, audio, video {
   url('images/Vector.svg') no-repeat;
 }
 
+input:focus, textarea:focus, button:focus, select:focus {
+  outline: 0;
+  outline-offset: 0;
+}
 
 
 
