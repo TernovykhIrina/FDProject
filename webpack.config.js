@@ -20,6 +20,7 @@ module.exports = {
         'headersAndFooters': './src/pages/components/headersAndFooters/headersAndFooters.js',
         'cards': './src/pages/components/cards/cards.js',
         'formElements': './src/pages/components/formElements/formElements.js',
+        'index': './src/pages/components/index/index.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
